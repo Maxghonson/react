@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("./styles//style.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+.close{
+  font-size: 2.5rem;
+  color: white;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: #273053;
+}
+
+nav div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.navIcon {
+  font-size: 2.8rem;
+  color: #0dcaf0;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.Link,
+.Links {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: #0dcaf0;
+    transition: 0.5s;
+  }
+}
+
+nav span {
+  display: flex;
+  align-items: center;
+}
+
+nav span h2,
+.Links {
+  color: #0dcaf0;
+  width: 200px;
+  line-height: 1.5rem;
+}
+
+.tickets {
+  width: 130px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #0d6efd;
+}
+
+.home {
+  height: 135vh;
+  padding-top: 10%;
+  background-image: linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%), url("./components//images/bgImg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.home .leader {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+  padding-top: 13%;
+}
+
+.leader h1 {
+  width: 57%;
+  margin: 0 auto;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: white;
+}
+
+.leader h1 span {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
+.leader .btn button {
+  padding: 1% 2.4%;
+  border: 1px solid white;
+  color: white;
+  margin-top: 2%;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    transition: 0.4s;
+    color: black;
+  }
+}
+
+.leader .btn {
+  padding-bottom: 2rem;
+}
+
+.downIcon {
+  width: 45px;
+  height: 45px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: white;
+  color: #273053;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+
+.highlights {
+  width: 90%;
+  margin: 0 auto;
+  height: 35vh;
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlights div {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+
+.highlights div:nth-child(1) {
+  background-image: url("https://templatemo.com/templates/templatemo_575_leadership_event/images/highlight/alexandre-pellaes-6vAjp0pscX0-unsplash.jpg");
+}
+
+.highlights div:nth-child(2) {
+  background-image: url("https://templatemo.com/templates/templatemo_575_leadership_event/images/highlight/miguel-henriques--8atMWER8bI-unsplash.jpg");
+}
+
+.highlights div:nth-child(3) {
+  background-image: url("https://templatemo.com/templates/templatemo_575_leadership_event/images/highlight/jakob-dalbjorn-cuKJre3nyYc-unsplash.jpg");
+}
+
+.about {
+  width: 90%;
+  height: 80vh;
+  padding-top: 13%;
+  margin: 0 auto;
+}
+
+.about .info {
+  display: flex;
+}
+
+.users img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.titleAbout span {
+  color: #0dcaf0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.about .titleAbout {
+  font-size: 2.8rem;
+}
+
+.info .story p {
+  width: 90%;
+  margin-top: 3%;
+  font-size: 1rem;
+  color: grey;
+  line-height: 1.5rem;
+}
+
+.info .story button {
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.info .story .btn {
+  padding: 2% 3%;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: #0dcaf0;
+  font-weight: 600;
+  border: 2px solid #0dcaf0;
+}
+
+.info .story .btnChek {
+  padding: 2% 5%;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  background-color: #273053;
+  font-weight: 800;
+  color: white;
+  border: none;
+  margin-left: 20px;
+}
+
+.info .users hr {
+  width: 80%;
+  margin-top: 5%;
+  border: 0.5px solid gray;
+}
+
+.info .users div {
+  display: flex;
+  align-items: center;
+  margin-top: 6.5%;
+}
+
+.info .users div p {
+  color: grey;
+  margin-left: 40px;
+}
+
+.ticket {
+  width: 100%;
+  height: 95vh;
+  padding-top: 10%;
+
+  .ticketTitle {
+    text-align: center;
+    font-size: 3rem;
+
+    span {
+      color: #0dcaf0;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.cards {
+  width: 100%;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 350px;
+  height: 53vh;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.44);
+  background-color: white;
+}
+
+.card .price {
+  width: 100%;
+  height: 70px;
+  padding: 0px 15px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #273053;
+  color: white;
+}
+
+.card hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card p {
+  color: grey;
+  margin: 8% 10%;
+}
+
+.card button {
+  width: 130px;
+  height: 40px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  margin-left: 10%;
+  background-color: #273053;
+  cursor: pointer;
+  &:hover{
+    background-color: rgb(0, 110, 255);
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./components/images/maria-stewart-p4tj0g-_aMM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.contact form {
+  width: 55%;
+  height: 60vh;
+  margin-top: 6%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+form h1 {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  background-color: #273053;
+  color: white;
+  border-radius: 15px 15px 0px 0px;
+}
+
+form input {
+  width: 26.5%;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f8ff;
+}
+
+form textarea {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #f0f8ff;
+}
+
+form button {
+  width: 90%;
+  height: 45px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: #0dcaf0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+form .inputs {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer {
+  width: 100%;
+  height: 42vh;
+}
+
+.event {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 2%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.event .logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  line-height: 1.1rem;
+
+  .navIcon {
+    font-size: 4rem;
+  }
+}
+
+.event .icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+footer hr {
+  width: 90%;
+  margin: 0 auto;
+  height: 0.5px;
+  color: grey;
+  margin-top: 3%;
+}
+
+footer .copyright {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright ul,
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: rgb(65, 65, 65);
+}
+
+.template {
+  display: flex;
+}
+
+.template div p {
+  width: 73%;
+  line-height: 1.5rem;
+  color: rgb(65, 65, 65);
+}
+
+.template p:nth-child(2) {
+  margin-top: 5%;
+}
+
+.upicon {
+  width: 50px;
+  height: 50px;
+  margin-top: 5%;
+  background-color: #f0f8ff;
+  transform: rotate(180deg);
+}
